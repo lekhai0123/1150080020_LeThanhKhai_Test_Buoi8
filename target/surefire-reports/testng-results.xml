@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="61" passed="59" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:28:16 ICT" name="Surefire suite" finished-at="2026-03-10T15:29:32 ICT" duration-ms="75641">
+    <groups>
+      <group name="regression">
+        <method signature="CartTest.testAddToCart()[pri:0, instance:tests.bai21.CartTest@256f8274]" name="testAddToCart" class="tests.bai21.CartTest"/>
+        <method signature="CartTest.testOpenCartPage()[pri:0, instance:tests.bai21.CartTest@256f8274]" name="testOpenCartPage" class="tests.bai21.CartTest"/>
+        <method signature="CheckoutTest.testCheckoutInfoPageDisplayed()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" name="testCheckoutInfoPageDisplayed" class="tests.bai21.CheckoutTest"/>
+        <method signature="CheckoutTest.testCheckoutWithoutInfo()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" name="testCheckoutWithoutInfo" class="tests.bai21.CheckoutTest"/>
+        <method signature="LoginTest.testLoginEmptyPassword()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" name="testLoginEmptyPassword" class="tests.bai21.LoginTest"/>
+        <method signature="LoginTest.testLoginSuccess()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" name="testLoginSuccess" class="tests.bai21.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CartTest.testAddToCart()[pri:0, instance:tests.bai21.CartTest@256f8274]" name="testAddToCart" class="tests.bai21.CartTest"/>
+        <method signature="CheckoutTest.testCheckoutInfoPageDisplayed()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" name="testCheckoutInfoPageDisplayed" class="tests.bai21.CheckoutTest"/>
+        <method signature="LoginTest.testLoginSuccess()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" name="testLoginSuccess" class="tests.bai21.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-03-10T15:28:16 ICT" name="Surefire test" finished-at="2026-03-10T15:29:32 ICT" duration-ms="75641">
+      <class name="tests.bai42.PhiShipBasisPathTest">
+        <test-method signature="testPath1_InvalidWeight()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath1_InvalidWeight" description="Path 1: Trong luong khong hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath1_InvalidWeight -->
+        <test-method signature="testPath2_NoiThanhNheKhongMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath2_NoiThanhNheKhongMember" description="Path 2: Noi thanh, &lt;= 5kg, khong member" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath2_NoiThanhNheKhongMember -->
+        <test-method signature="testPath3_NoiThanhNangKhongMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath3_NoiThanhNangKhongMember" description="Path 3: Noi thanh, &gt; 5kg, khong member" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath3_NoiThanhNangKhongMember -->
+        <test-method signature="testPath4_NgoaiThanhNheKhongMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath4_NgoaiThanhNheKhongMember" description="Path 4: Ngoai thanh, &lt;= 3kg, khong member" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath4_NgoaiThanhNheKhongMember -->
+        <test-method signature="testPath5_NgoaiThanhNangKhongMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath5_NgoaiThanhNangKhongMember" description="Path 5: Ngoai thanh, &gt; 3kg, khong member" finished-at="2026-03-10T15:29:32 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath5_NgoaiThanhNangKhongMember -->
+        <test-method signature="testPath6_TinhKhacNheKhongMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath6_TinhKhacNheKhongMember" description="Path 6: Tinh khac, &lt;= 2kg, khong member" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath6_TinhKhacNheKhongMember -->
+        <test-method signature="testPath7_TinhKhacNangKhongMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath7_TinhKhacNangKhongMember" description="Path 7: Tinh khac, &gt; 2kg, khong member" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath7_TinhKhacNangKhongMember -->
+        <test-method signature="testPath8_NoiThanhMember()[pri:0, instance:tests.bai42.PhiShipBasisPathTest@5c10f1c3]" started-at="2026-03-10T15:29:32 ICT" name="testPath8_NoiThanhMember" description="Path 8: Noi thanh, member duoc giam 10 phan tram" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath8_NoiThanhMember -->
+      </class> <!-- tests.bai42.PhiShipBasisPathTest -->
+      <class name="tests.bai52.VayVonMCDCTest">
+        <test-method signature="testMCDC_DiemTinDungDocLap_Tu700TroLen()[pri:0, instance:tests.bai52.VayVonMCDCTest@7ac2e39b]" started-at="2026-03-10T15:29:32 ICT" name="testMCDC_DiemTinDungDocLap_Tu700TroLen" description="MC/DC cho D: diem tin dung &gt;= 700 lam thay doi ket qua" finished-at="2026-03-10T15:29:32 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DiemTinDungDocLap_Tu700TroLen -->
+        <test-method signature="testMCDC_TaiSanDocLap_KhongCoTaiSan()[pri:0, instance:tests.bai52.VayVonMCDCTest@7ac2e39b]" started-at="2026-03-10T15:29:32 ICT" name="testMCDC_TaiSanDocLap_KhongCoTaiSan" description="MC/DC cho C: khong co tai san bao lanh va diem tin dung thap" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_TaiSanDocLap_KhongCoTaiSan -->
+        <test-method signature="testMCDC_ThuNhapDocLap_ThapHon10Trieu()[pri:0, instance:tests.bai52.VayVonMCDCTest@7ac2e39b]" started-at="2026-03-10T15:29:32 ICT" name="testMCDC_ThuNhapDocLap_ThapHon10Trieu" description="MC/DC cho B: thu nhap &lt; 10 trieu lam thay doi ket qua" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_ThuNhapDocLap_ThapHon10Trieu -->
+        <test-method signature="testMCDC_TuoiDocLap_Du22TroLen()[pri:0, instance:tests.bai52.VayVonMCDCTest@7ac2e39b]" started-at="2026-03-10T15:29:32 ICT" name="testMCDC_TuoiDocLap_Du22TroLen" description="MC/DC cho A: tuoi &gt;= 22, truong hop co du dieu kien vay" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_TuoiDocLap_Du22TroLen -->
+        <test-method signature="testMCDC_TuoiDocLap_ThapHon22()[pri:0, instance:tests.bai52.VayVonMCDCTest@7ac2e39b]" started-at="2026-03-10T15:29:32 ICT" name="testMCDC_TuoiDocLap_ThapHon22" description="MC/DC cho A: tuoi &lt; 22 lam thay doi ket qua" finished-at="2026-03-10T15:29:32 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_TuoiDocLap_ThapHon22 -->
+      </class> <!-- tests.bai52.VayVonMCDCTest -->
+      <class name="tests.bai21.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" started-at="2026-03-10T15:29:10 ICT" name="setUp" finished-at="2026-03-10T15:29:12 ICT" duration-ms="2223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginEmptyPassword()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" started-at="2026-03-10T15:29:12 ICT" name="testLoginEmptyPassword" finished-at="2026-03-10T15:29:13 ICT" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" started-at="2026-03-10T15:29:13 ICT" name="tearDown" finished-at="2026-03-10T15:29:13 ICT" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" started-at="2026-03-10T15:29:13 ICT" name="setUp" finished-at="2026-03-10T15:29:15 ICT" duration-ms="1625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" started-at="2026-03-10T15:29:15 ICT" name="testLoginSuccess" finished-at="2026-03-10T15:29:16 ICT" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai21.LoginTest@52d239ba]" started-at="2026-03-10T15:29:16 ICT" name="tearDown" finished-at="2026-03-10T15:29:16 ICT" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai21.LoginTest -->
+      <class name="tests.bai22.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.bai22.LoginTest@6c5945a7]" started-at="2026-03-10T15:29:25 ICT" name="setUp" finished-at="2026-03-10T15:29:26 ICT" duration-ms="1567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginSuccessParallel()[pri:0, instance:tests.bai22.LoginTest@6c5945a7]" started-at="2026-03-10T15:29:26 ICT" name="testLoginSuccessParallel" finished-at="2026-03-10T15:29:28 ICT" duration-ms="1598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccessParallel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai22.LoginTest@6c5945a7]" started-at="2026-03-10T15:29:28 ICT" name="tearDown" finished-at="2026-03-10T15:29:28 ICT" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.bai22.LoginTest@6c5945a7]" started-at="2026-03-10T15:29:28 ICT" name="setUp" finished-at="2026-03-10T15:29:30 ICT" duration-ms="1677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWrongPasswordParallel()[pri:0, instance:tests.bai22.LoginTest@6c5945a7]" started-at="2026-03-10T15:29:30 ICT" name="testLoginWrongPasswordParallel" finished-at="2026-03-10T15:29:31 ICT" duration-ms="1357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPasswordParallel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai22.LoginTest@6c5945a7]" started-at="2026-03-10T15:29:31 ICT" name="tearDown" finished-at="2026-03-10T15:29:31 ICT" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai22.LoginTest -->
+      <class name="tests.bai31.XepLoaiTest">
+        <test-method signature="testGioi()[pri:0, instance:tests.bai31.XepLoaiTest@2f05be7f]" started-at="2026-03-10T15:29:31 ICT" name="testGioi" finished-at="2026-03-10T15:29:31 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGioi -->
+        <test-method signature="testInvalidScore()[pri:0, instance:tests.bai31.XepLoaiTest@2f05be7f]" started-at="2026-03-10T15:29:31 ICT" name="testInvalidScore" finished-at="2026-03-10T15:29:31 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidScore -->
+        <test-method signature="testThiLai()[pri:0, instance:tests.bai31.XepLoaiTest@2f05be7f]" started-at="2026-03-10T15:29:31 ICT" name="testThiLai" finished-at="2026-03-10T15:29:31 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThiLai -->
+        <test-method signature="testKha()[pri:0, instance:tests.bai31.XepLoaiTest@2f05be7f]" started-at="2026-03-10T15:29:31 ICT" name="testKha" finished-at="2026-03-10T15:29:31 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKha -->
+        <test-method signature="testYeuHocLai()[pri:0, instance:tests.bai31.XepLoaiTest@2f05be7f]" started-at="2026-03-10T15:29:31 ICT" name="testYeuHocLai" finished-at="2026-03-10T15:29:31 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYeuHocLai -->
+        <test-method signature="testTrungBinh()[pri:0, instance:tests.bai31.XepLoaiTest@2f05be7f]" started-at="2026-03-10T15:29:31 ICT" name="testTrungBinh" finished-at="2026-03-10T15:29:31 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrungBinh -->
+      </class> <!-- tests.bai31.XepLoaiTest -->
+      <class name="tests.bai12.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:40 ICT" name="setUp" finished-at="2026-03-10T15:28:42 ICT" duration-ms="1473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginEmptyPassword()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:42 ICT" name="testLoginEmptyPassword" finished-at="2026-03-10T15:28:43 ICT" duration-ms="1246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:43 ICT" name="tearDown" finished-at="2026-03-10T15:28:43 ICT" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:43 ICT" name="setUp" finished-at="2026-03-10T15:28:46 ICT" duration-ms="2267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginEmptyUsername()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:46 ICT" name="testLoginEmptyUsername" finished-at="2026-03-10T15:28:46 ICT" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:46 ICT" name="tearDown" finished-at="2026-03-10T15:28:47 ICT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:47 ICT" name="setUp" finished-at="2026-03-10T15:28:48 ICT" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginLockedUser()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:48 ICT" name="testLoginLockedUser" finished-at="2026-03-10T15:28:50 ICT" duration-ms="1429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginLockedUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:50 ICT" name="tearDown" finished-at="2026-03-10T15:28:50 ICT" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:50 ICT" name="setUp" finished-at="2026-03-10T15:28:52 ICT" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:52 ICT" name="testLoginSuccess" finished-at="2026-03-10T15:28:53 ICT" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:53 ICT" name="tearDown" finished-at="2026-03-10T15:28:53 ICT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:53 ICT" name="setUp" finished-at="2026-03-10T15:28:54 ICT" duration-ms="1372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWrongPassword()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:54 ICT" name="testLoginWrongPassword" finished-at="2026-03-10T15:28:56 ICT" duration-ms="1570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai12.LoginTest@395b56bb]" started-at="2026-03-10T15:28:56 ICT" name="tearDown" finished-at="2026-03-10T15:28:56 ICT" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai12.LoginTest -->
+      <class name="tests.bai32.TinhTienNuocTest">
+        <test-method signature="testDanCuBac1()[pri:0, instance:tests.bai32.TinhTienNuocTest@640f11a1]" started-at="2026-03-10T15:29:31 ICT" name="testDanCuBac1" finished-at="2026-03-10T15:29:32 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDanCuBac1 -->
+        <test-method signature="testDanCuBac2()[pri:0, instance:tests.bai32.TinhTienNuocTest@640f11a1]" started-at="2026-03-10T15:29:32 ICT" name="testDanCuBac2" finished-at="2026-03-10T15:29:32 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDanCuBac2 -->
+        <test-method signature="testDanCuBac3()[pri:0, instance:tests.bai32.TinhTienNuocTest@640f11a1]" started-at="2026-03-10T15:29:32 ICT" name="testDanCuBac3" finished-at="2026-03-10T15:29:32 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDanCuBac3 -->
+        <test-method signature="testHoNgheo()[pri:0, instance:tests.bai32.TinhTienNuocTest@640f11a1]" started-at="2026-03-10T15:29:32 ICT" name="testHoNgheo" finished-at="2026-03-10T15:29:32 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHoNgheo -->
+        <test-method signature="testKinhDoanh()[pri:0, instance:tests.bai32.TinhTienNuocTest@640f11a1]" started-at="2026-03-10T15:29:32 ICT" name="testKinhDoanh" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKinhDoanh -->
+        <test-method signature="testSoM3KhongHopLe()[pri:0, instance:tests.bai32.TinhTienNuocTest@640f11a1]" started-at="2026-03-10T15:29:32 ICT" name="testSoM3KhongHopLe" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoM3KhongHopLe -->
+      </class> <!-- tests.bai32.TinhTienNuocTest -->
+      <class name="tests.bai22.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.bai22.CartTest@68fa0ba8]" started-at="2026-03-10T15:29:16 ICT" name="setUp" finished-at="2026-03-10T15:29:19 ICT" duration-ms="2110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCartParallel()[pri:0, instance:tests.bai22.CartTest@68fa0ba8]" started-at="2026-03-10T15:29:19 ICT" name="testAddToCartParallel" finished-at="2026-03-10T15:29:20 ICT" duration-ms="1266" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_badge"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3879dced04a4674764facd44435f745d, findElement {using=class name, value=shopping_cart_badge}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51446}, goog:processID: 16932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51446/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3879dced04a4674764facd44435f745d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_badge"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3879dced04a4674764facd44435f745d, findElement {using=class name, value=shopping_cart_badge}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51446}, goog:processID: 16932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51446/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3879dced04a4674764facd44435f745d
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at tests.bai22.CartTest.testAddToCartParallel(CartTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCartParallel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai22.CartTest@68fa0ba8]" started-at="2026-03-10T15:29:20 ICT" name="tearDown" finished-at="2026-03-10T15:29:20 ICT" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.bai22.CartTest@68fa0ba8]" started-at="2026-03-10T15:29:20 ICT" name="setUp" finished-at="2026-03-10T15:29:23 ICT" duration-ms="2938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOpenCartParallel()[pri:0, instance:tests.bai22.CartTest@68fa0ba8]" started-at="2026-03-10T15:29:23 ICT" name="testOpenCartParallel" finished-at="2026-03-10T15:29:24 ICT" duration-ms="1209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenCartParallel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai22.CartTest@68fa0ba8]" started-at="2026-03-10T15:29:24 ICT" name="tearDown" finished-at="2026-03-10T15:29:25 ICT" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai22.CartTest -->
+      <class name="tests.bai21.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai21.CartTest@256f8274]" started-at="2026-03-10T15:28:56 ICT" name="setUp" finished-at="2026-03-10T15:28:59 ICT" duration-ms="2778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCart()[pri:0, instance:tests.bai21.CartTest@256f8274]" started-at="2026-03-10T15:28:59 ICT" name="testAddToCart" finished-at="2026-03-10T15:28:59 ICT" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai21.CartTest@256f8274]" started-at="2026-03-10T15:28:59 ICT" name="tearDown" finished-at="2026-03-10T15:29:00 ICT" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai21.CartTest@256f8274]" started-at="2026-03-10T15:29:00 ICT" name="setUp" finished-at="2026-03-10T15:29:02 ICT" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOpenCartPage()[pri:0, instance:tests.bai21.CartTest@256f8274]" started-at="2026-03-10T15:29:02 ICT" name="testOpenCartPage" finished-at="2026-03-10T15:29:03 ICT" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenCartPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai21.CartTest@256f8274]" started-at="2026-03-10T15:29:03 ICT" name="tearDown" finished-at="2026-03-10T15:29:03 ICT" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai21.CartTest -->
+      <class name="tests.bai21.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" started-at="2026-03-10T15:29:03 ICT" name="setUp" finished-at="2026-03-10T15:29:06 ICT" duration-ms="3153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutInfoPageDisplayed()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" started-at="2026-03-10T15:29:06 ICT" name="testCheckoutInfoPageDisplayed" finished-at="2026-03-10T15:29:06 ICT" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutInfoPageDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" started-at="2026-03-10T15:29:06 ICT" name="tearDown" finished-at="2026-03-10T15:29:06 ICT" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" started-at="2026-03-10T15:29:06 ICT" name="setUp" finished-at="2026-03-10T15:29:10 ICT" duration-ms="3627" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at tests.bai21.CheckoutTest.setUp(CheckoutTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutWithoutInfo()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" started-at="2026-03-10T15:29:10 ICT" name="testCheckoutWithoutInfo" finished-at="2026-03-10T15:29:10 ICT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at tests.bai21.CheckoutTest.setUp(CheckoutTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithoutInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai21.CheckoutTest@68044f4]" started-at="2026-03-10T15:29:10 ICT" name="tearDown" finished-at="2026-03-10T15:29:10 ICT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai21.CheckoutTest -->
+      <class name="tests.bai11.TitleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:16 ICT" name="setUp" finished-at="2026-03-10T15:28:30 ICT" duration-ms="13541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFormDisplayed()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:30 ICT" name="testLoginFormDisplayed" description="Kiem thu form dang nhap hien thi" finished-at="2026-03-10T15:28:31 ICT" duration-ms="1472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFormDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:31 ICT" name="tearDown" finished-at="2026-03-10T15:28:32 ICT" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:32 ICT" name="setUp" finished-at="2026-03-10T15:28:35 ICT" duration-ms="2514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageSource()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:35 ICT" name="testPageSource" description="Kiem thu page source" finished-at="2026-03-10T15:28:35 ICT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageSource -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:35 ICT" name="tearDown" finished-at="2026-03-10T15:28:35 ICT" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:35 ICT" name="setUp" finished-at="2026-03-10T15:28:37 ICT" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTitle()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:37 ICT" name="testTitle" description="Kiem thu tieu de trang chu" finished-at="2026-03-10T15:28:37 ICT" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:37 ICT" name="tearDown" finished-at="2026-03-10T15:28:38 ICT" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:38 ICT" name="setUp" finished-at="2026-03-10T15:28:40 ICT" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testURL()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:40 ICT" name="testURL" description="Kiem thu URL trang chu" finished-at="2026-03-10T15:28:40 ICT" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.bai11.TitleTest@5cbe877d]" started-at="2026-03-10T15:28:40 ICT" name="tearDown" finished-at="2026-03-10T15:28:40 ICT" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.bai11.TitleTest -->
+      <class name="tests.bai61.PhoneValidatorTest">
+        <test-method signature="testBoundary_03Prefix()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_03Prefix" description="Boundary: dau 03 hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_03Prefix -->
+        <test-method signature="testBoundary_05Prefix()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_05Prefix" description="Boundary: dau 05 hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_05Prefix -->
+        <test-method signature="testBoundary_07Prefix()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_07Prefix" description="Boundary: dau 07 hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_07Prefix -->
+        <test-method signature="testBoundary_08Prefix()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_08Prefix" description="Boundary: dau 08 hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_08Prefix -->
+        <test-method signature="testBoundary_Empty()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_Empty" description="Boundary: rong" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_Empty -->
+        <test-method signature="testBoundary_OnlySpaces()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_OnlySpaces" description="Boundary: chi co khoang trang" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_OnlySpaces -->
+        <test-method signature="testBoundary_Plus84WithSpaces()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_Plus84WithSpaces" description="Boundary: +84 co khoang trang hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_Plus84WithSpaces -->
+        <test-method signature="testBoundary_TooLong()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_TooLong" description="Boundary: qua 10 chu so" finished-at="2026-03-10T15:29:32 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_TooLong -->
+        <test-method signature="testBoundary_Plus84TooShort()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testBoundary_Plus84TooShort" description="Boundary: +84 nhung thieu chu so" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_Plus84TooShort -->
+        <test-method signature="testPath1_NullPhone()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath1_NullPhone" description="Path 1: null" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath1_NullPhone -->
+        <test-method signature="testPath2_InvalidCharacter()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath2_InvalidCharacter" description="Path 2: chua ky tu khong hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath2_InvalidCharacter -->
+        <test-method signature="testPath3_InvalidPrefix()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath3_InvalidPrefix" description="Path 3: khong bat dau bang 0 hoac +84" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath3_InvalidPrefix -->
+        <test-method signature="testPath5_InvalidLength()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath5_InvalidLength" description="Path 5: do dai sau chuan hoa khong bang 10" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath5_InvalidLength -->
+        <test-method signature="testPath4_ValidPlus84()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath4_ValidPlus84" description="Path 4: bat dau bang +84 va hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath4_ValidPlus84 -->
+        <test-method signature="testPath6_ValidWithSpaces()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath6_ValidWithSpaces" description="Path 6: co khoang trang hop le" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath6_ValidWithSpaces -->
+        <test-method signature="testPath7_InvalidNetworkPrefix()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath7_InvalidNetworkPrefix" description="Path 7: dau so khong thuoc 03 05 07 08 09" finished-at="2026-03-10T15:29:32 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath7_InvalidNetworkPrefix -->
+        <test-method signature="testPath8_ValidLocalPhone()[pri:0, instance:tests.bai61.PhoneValidatorTest@78365cfa]" started-at="2026-03-10T15:29:32 ICT" name="testPath8_ValidLocalPhone" description="Path 8: so hop le dang 0xxxxxxxxx" finished-at="2026-03-10T15:29:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath8_ValidLocalPhone -->
+      </class> <!-- tests.bai61.PhoneValidatorTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

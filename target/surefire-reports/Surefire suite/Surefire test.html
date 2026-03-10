@@ -1,0 +1,670 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>59/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 15:28:16 ICT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>75 seconds (75641 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.bai21.CheckoutTest.setUp()'><b>setUp</b><br>Test class: tests.bai21.CheckoutTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#checkout&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at tests.bai21.CheckoutTest.setUp(CheckoutTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace582202832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace582202832'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#checkout&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at tests.bai21.CheckoutTest.setUp(CheckoutTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>3</td>
+<td>tests.bai21.CheckoutTest@68044f4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.bai21.CheckoutTest.tearDown()'><b>tearDown</b><br>Test class: tests.bai21.CheckoutTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai21.CheckoutTest@68044f4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.bai22.CartTest.testAddToCartParallel()'><b>testAddToCartParallel</b><br>Test class: tests.bai22.CartTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.shopping_cart_badge&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3879dced04a4674764facd44435f745d, findElement {using=class name, value=shopping_cart_badge}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51446}, goog:processID: 16932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51446/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3879dced04a4674764facd44435f745d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at tests.bai22.CartTest.testAddToCartParallel(CartTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace555984412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace555984412'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.shopping_cart_badge&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3879dced04a4674764facd44435f745d, findElement {using=class name, value=shopping_cart_badge}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51446}, goog:processID: 16932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51446/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3879dced04a4674764facd44435f745d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at tests.bai22.CartTest.testAddToCartParallel(CartTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>tests.bai22.CartTest@68fa0ba8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath1_NullPhone()'><b>testPath1_NullPhone</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 1: null</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai12.LoginTest.testLoginWrongPassword()'><b>testLoginWrongPassword</b><br>Test class: tests.bai12.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai12.LoginTest@395b56bb</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_Plus84WithSpaces()'><b>testBoundary_Plus84WithSpaces</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: +84 co khoang trang hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai21.CartTest.testAddToCart()'><b>testAddToCart</b><br>Test class: tests.bai21.CartTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai21.CartTest@256f8274</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath4_NgoaiThanhNheKhongMember()'><b>testPath4_NgoaiThanhNheKhongMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 4: Ngoai thanh, <= 3kg, khong member</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai12.LoginTest.testLoginSuccess()'><b>testLoginSuccess</b><br>Test class: tests.bai12.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai12.LoginTest@395b56bb</td></tr>
+<tr>
+<td title='tests.bai21.LoginTest.testLoginEmptyPassword()'><b>testLoginEmptyPassword</b><br>Test class: tests.bai21.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai21.LoginTest@52d239ba</td></tr>
+<tr>
+<td title='tests.bai52.VayVonMCDCTest.testMCDC_TaiSanDocLap_KhongCoTaiSan()'><b>testMCDC_TaiSanDocLap_KhongCoTaiSan</b><br>Test class: tests.bai52.VayVonMCDCTest<br>Test method: MC/DC cho C: khong co tai san bao lanh va diem tin dung thap</td>
+<td></td>
+<td>0</td>
+<td>tests.bai52.VayVonMCDCTest@7ac2e39b</td></tr>
+<tr>
+<td title='tests.bai22.LoginTest.testLoginSuccessParallel()'><b>testLoginSuccessParallel</b><br>Test class: tests.bai22.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai22.LoginTest@6c5945a7</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath6_ValidWithSpaces()'><b>testPath6_ValidWithSpaces</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 6: co khoang trang hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath5_InvalidLength()'><b>testPath5_InvalidLength</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 5: do dai sau chuan hoa khong bang 10</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai32.TinhTienNuocTest.testKinhDoanh()'><b>testKinhDoanh</b><br>Test class: tests.bai32.TinhTienNuocTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai32.TinhTienNuocTest@640f11a1</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath8_NoiThanhMember()'><b>testPath8_NoiThanhMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 8: Noi thanh, member duoc giam 10 phan tram</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_05Prefix()'><b>testBoundary_05Prefix</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: dau 05 hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai11.TitleTest.testPageSource()'><b>testPageSource</b><br>Test class: tests.bai11.TitleTest<br>Test method: Kiem thu page source</td>
+<td></td>
+<td>0</td>
+<td>tests.bai11.TitleTest@5cbe877d</td></tr>
+<tr>
+<td title='tests.bai31.XepLoaiTest.testThiLai()'><b>testThiLai</b><br>Test class: tests.bai31.XepLoaiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai31.XepLoaiTest@2f05be7f</td></tr>
+<tr>
+<td title='tests.bai52.VayVonMCDCTest.testMCDC_ThuNhapDocLap_ThapHon10Trieu()'><b>testMCDC_ThuNhapDocLap_ThapHon10Trieu</b><br>Test class: tests.bai52.VayVonMCDCTest<br>Test method: MC/DC cho B: thu nhap < 10 trieu lam thay doi ket qua</td>
+<td></td>
+<td>0</td>
+<td>tests.bai52.VayVonMCDCTest@7ac2e39b</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath1_InvalidWeight()'><b>testPath1_InvalidWeight</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 1: Trong luong khong hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath2_InvalidCharacter()'><b>testPath2_InvalidCharacter</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 2: chua ky tu khong hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai22.CartTest.testOpenCartParallel()'><b>testOpenCartParallel</b><br>Test class: tests.bai22.CartTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai22.CartTest@68fa0ba8</td></tr>
+<tr>
+<td title='tests.bai11.TitleTest.testTitle()'><b>testTitle</b><br>Test class: tests.bai11.TitleTest<br>Test method: Kiem thu tieu de trang chu</td>
+<td></td>
+<td>0</td>
+<td>tests.bai11.TitleTest@5cbe877d</td></tr>
+<tr>
+<td title='tests.bai11.TitleTest.testLoginFormDisplayed()'><b>testLoginFormDisplayed</b><br>Test class: tests.bai11.TitleTest<br>Test method: Kiem thu form dang nhap hien thi</td>
+<td></td>
+<td>1</td>
+<td>tests.bai11.TitleTest@5cbe877d</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_Empty()'><b>testBoundary_Empty</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: rong</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai31.XepLoaiTest.testKha()'><b>testKha</b><br>Test class: tests.bai31.XepLoaiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai31.XepLoaiTest@2f05be7f</td></tr>
+<tr>
+<td title='tests.bai32.TinhTienNuocTest.testDanCuBac2()'><b>testDanCuBac2</b><br>Test class: tests.bai32.TinhTienNuocTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai32.TinhTienNuocTest@640f11a1</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_08Prefix()'><b>testBoundary_08Prefix</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: dau 08 hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai21.LoginTest.testLoginSuccess()'><b>testLoginSuccess</b><br>Test class: tests.bai21.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai21.LoginTest@52d239ba</td></tr>
+<tr>
+<td title='tests.bai52.VayVonMCDCTest.testMCDC_TuoiDocLap_Du22TroLen()'><b>testMCDC_TuoiDocLap_Du22TroLen</b><br>Test class: tests.bai52.VayVonMCDCTest<br>Test method: MC/DC cho A: tuoi >= 22, truong hop co du dieu kien vay</td>
+<td></td>
+<td>0</td>
+<td>tests.bai52.VayVonMCDCTest@7ac2e39b</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_OnlySpaces()'><b>testBoundary_OnlySpaces</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: chi co khoang trang</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai12.LoginTest.testLoginEmptyPassword()'><b>testLoginEmptyPassword</b><br>Test class: tests.bai12.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai12.LoginTest@395b56bb</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_03Prefix()'><b>testBoundary_03Prefix</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: dau 03 hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath3_InvalidPrefix()'><b>testPath3_InvalidPrefix</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 3: khong bat dau bang 0 hoac +84</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai21.CartTest.testOpenCartPage()'><b>testOpenCartPage</b><br>Test class: tests.bai21.CartTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai21.CartTest@256f8274</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath3_NoiThanhNangKhongMember()'><b>testPath3_NoiThanhNangKhongMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 3: Noi thanh, > 5kg, khong member</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_TooLong()'><b>testBoundary_TooLong</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: qua 10 chu so</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai31.XepLoaiTest.testGioi()'><b>testGioi</b><br>Test class: tests.bai31.XepLoaiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai31.XepLoaiTest@2f05be7f</td></tr>
+<tr>
+<td title='tests.bai32.TinhTienNuocTest.testDanCuBac1()'><b>testDanCuBac1</b><br>Test class: tests.bai32.TinhTienNuocTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai32.TinhTienNuocTest@640f11a1</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_07Prefix()'><b>testBoundary_07Prefix</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: dau 07 hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai31.XepLoaiTest.testYeuHocLai()'><b>testYeuHocLai</b><br>Test class: tests.bai31.XepLoaiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai31.XepLoaiTest@2f05be7f</td></tr>
+<tr>
+<td title='tests.bai11.TitleTest.testURL()'><b>testURL</b><br>Test class: tests.bai11.TitleTest<br>Test method: Kiem thu URL trang chu</td>
+<td></td>
+<td>0</td>
+<td>tests.bai11.TitleTest@5cbe877d</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath5_NgoaiThanhNangKhongMember()'><b>testPath5_NgoaiThanhNangKhongMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 5: Ngoai thanh, > 3kg, khong member</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai21.CheckoutTest.testCheckoutInfoPageDisplayed()'><b>testCheckoutInfoPageDisplayed</b><br>Test class: tests.bai21.CheckoutTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai21.CheckoutTest@68044f4</td></tr>
+<tr>
+<td title='tests.bai32.TinhTienNuocTest.testHoNgheo()'><b>testHoNgheo</b><br>Test class: tests.bai32.TinhTienNuocTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai32.TinhTienNuocTest@640f11a1</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testBoundary_Plus84TooShort()'><b>testBoundary_Plus84TooShort</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Boundary: +84 nhung thieu chu so</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai52.VayVonMCDCTest.testMCDC_DiemTinDungDocLap_Tu700TroLen()'><b>testMCDC_DiemTinDungDocLap_Tu700TroLen</b><br>Test class: tests.bai52.VayVonMCDCTest<br>Test method: MC/DC cho D: diem tin dung >= 700 lam thay doi ket qua</td>
+<td></td>
+<td>0</td>
+<td>tests.bai52.VayVonMCDCTest@7ac2e39b</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath4_ValidPlus84()'><b>testPath4_ValidPlus84</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 4: bat dau bang +84 va hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai31.XepLoaiTest.testTrungBinh()'><b>testTrungBinh</b><br>Test class: tests.bai31.XepLoaiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai31.XepLoaiTest@2f05be7f</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath7_TinhKhacNangKhongMember()'><b>testPath7_TinhKhacNangKhongMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 7: Tinh khac, > 2kg, khong member</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai12.LoginTest.testLoginEmptyUsername()'><b>testLoginEmptyUsername</b><br>Test class: tests.bai12.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai12.LoginTest@395b56bb</td></tr>
+<tr>
+<td title='tests.bai32.TinhTienNuocTest.testDanCuBac3()'><b>testDanCuBac3</b><br>Test class: tests.bai32.TinhTienNuocTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai32.TinhTienNuocTest@640f11a1</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath8_ValidLocalPhone()'><b>testPath8_ValidLocalPhone</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 8: so hop le dang 0xxxxxxxxx</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+<tr>
+<td title='tests.bai22.LoginTest.testLoginWrongPasswordParallel()'><b>testLoginWrongPasswordParallel</b><br>Test class: tests.bai22.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai22.LoginTest@6c5945a7</td></tr>
+<tr>
+<td title='tests.bai12.LoginTest.testLoginLockedUser()'><b>testLoginLockedUser</b><br>Test class: tests.bai12.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.bai12.LoginTest@395b56bb</td></tr>
+<tr>
+<td title='tests.bai31.XepLoaiTest.testInvalidScore()'><b>testInvalidScore</b><br>Test class: tests.bai31.XepLoaiTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai31.XepLoaiTest@2f05be7f</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath2_NoiThanhNheKhongMember()'><b>testPath2_NoiThanhNheKhongMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 2: Noi thanh, <= 5kg, khong member</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai32.TinhTienNuocTest.testSoM3KhongHopLe()'><b>testSoM3KhongHopLe</b><br>Test class: tests.bai32.TinhTienNuocTest</td>
+<td></td>
+<td>0</td>
+<td>tests.bai32.TinhTienNuocTest@640f11a1</td></tr>
+<tr>
+<td title='tests.bai52.VayVonMCDCTest.testMCDC_TuoiDocLap_ThapHon22()'><b>testMCDC_TuoiDocLap_ThapHon22</b><br>Test class: tests.bai52.VayVonMCDCTest<br>Test method: MC/DC cho A: tuoi < 22 lam thay doi ket qua</td>
+<td></td>
+<td>0</td>
+<td>tests.bai52.VayVonMCDCTest@7ac2e39b</td></tr>
+<tr>
+<td title='tests.bai42.PhiShipBasisPathTest.testPath6_TinhKhacNheKhongMember()'><b>testPath6_TinhKhacNheKhongMember</b><br>Test class: tests.bai42.PhiShipBasisPathTest<br>Test method: Path 6: Tinh khac, <= 2kg, khong member</td>
+<td></td>
+<td>0</td>
+<td>tests.bai42.PhiShipBasisPathTest@5c10f1c3</td></tr>
+<tr>
+<td title='tests.bai61.PhoneValidatorTest.testPath7_InvalidNetworkPrefix()'><b>testPath7_InvalidNetworkPrefix</b><br>Test class: tests.bai61.PhoneValidatorTest<br>Test method: Path 7: dau so khong thuoc 03 05 07 08 09</td>
+<td></td>
+<td>0</td>
+<td>tests.bai61.PhoneValidatorTest@78365cfa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.bai21.CheckoutTest.testCheckoutWithoutInfo()'><b>testCheckoutWithoutInfo</b><br>Test class: tests.bai21.CheckoutTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#checkout&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at tests.bai21.CheckoutTest.setUp(CheckoutTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1337710988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337710988'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#checkout&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b26b292a7ad3c788443ae04131c4ad, findElement {using=id, value=checkout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52204}, goog:processID: 13200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52204/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b26b292a7ad3c788443ae04131c4ad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at tests.bai21.CheckoutTest.setUp(CheckoutTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.bai21.CheckoutTest@68044f4</td></tr>
+</table><p>
+</body>
+</html>
