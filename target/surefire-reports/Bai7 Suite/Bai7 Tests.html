@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  Bai7 Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bai7 Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 15:52:05 ICT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1031 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath2_NoCouponNoMember_COD()'><b>testPath2_NoCouponNoMember_COD</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 2: Khong coupon, khong member, COD, total < 500k</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath6_Sale20_Platinum_NoShip()'><b>testPath6_Sale20_Platinum_NoShip</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 6: Coupon SALE20, PLATINUM, total >= 500k</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath8_NoCoupon_Gold_COD()'><b>testPath8_NoCoupon_Gold_COD</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 8: Khong coupon, GOLD, COD</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath3_NoCouponNoMember_Online()'><b>testPath3_NoCouponNoMember_Online</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 3: Khong coupon, khong member, online, total < 500k</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath7_InvalidCoupon()'><b>testPath7_InvalidCoupon</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 7: Coupon khong hop le</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testMcdc_D3_Sale10()'><b>testMcdc_D3_Sale10</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: MC/DC cho D3: coupon SALE10</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath5_Sale20_Gold_Online()'><b>testPath5_Sale20_Gold_Online</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 5: Coupon SALE20, GOLD, online</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testMcdc_D2_NullCoupon()'><b>testMcdc_D2_NullCoupon</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: MC/DC cho D2: couponCode = null</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath4_Sale10_NoMember_COD()'><b>testPath4_Sale10_NoMember_COD</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 4: Coupon SALE10, khong member, COD</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testMcdc_D2_EmptyCoupon()'><b>testMcdc_D2_EmptyCoupon</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: MC/DC cho D2: couponCode rong</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testMcdc_D3_Sale20()'><b>testMcdc_D3_Sale20</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: MC/DC cho D3: coupon SALE20</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath9_NoCoupon_Platinum_Online()'><b>testPath9_NoCoupon_Platinum_Online</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 9: Khong coupon, PLATINUM, online</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+<tr>
+<td title='tests.bai71.OrderProcessorTest.testPath1_EmptyCart_Null()'><b>testPath1_EmptyCart_Null</b><br>Test class: tests.bai71.OrderProcessorTest<br>Test method: Basis Path 1: Gio hang null</td>
+<td></td>
+<td>0</td>
+<td>tests.bai71.OrderProcessorTest@5e8cda75</td></tr>
+</table><p>
+</body>
+</html>
